@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Deposit
+{
+	public:
+	int amount;
+	Deposit()
+	{
+		amount=500;
+	}
+Deposit(int a)
+{
+	amount=500+ a;
+}
+void display()
+{
+	cout<<amount;
+}
+};
+int main()
+{
+	Deposit D1;
+	int amt;
+	cout<<"\n enter amount to deposit :";
+	cin>>amt;
+	cout<<"\n initial amount in bank RS :"<<D1.amount;
+	Deposit D2(amt);
+	cout<<"\n amount in the bank after the deposit the amount is Rs :"<<D2.amount;
+	Deposit D3(amt+amt);
+	cout<<"\n amount in the bank after the deposit with addition equal amount deposit  Rs  is :"<<D3.amount;
+	return 0;
+}
